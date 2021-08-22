@@ -177,6 +177,7 @@ impl ProcessHandler for Filter {
         println!("Buffer size changed from {} to {}", self.buffer_size, size);
         self.buffer_size = size as usize;
         self.input_offset = 0;
+        self.has_buffer = false;
         Control::Continue
     }
 }
