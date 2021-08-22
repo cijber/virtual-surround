@@ -1,0 +1,21 @@
+[package]
+name = "virtual-surround"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/referen1ce/manifest.html
+
+[dependencies]
+bwavfile = { path = "../bwavfile" }
+anyhow = "1"
+rustfft = { version = "6", optional = true }
+realfft = { version = "2", optional = true }
+samplerate = { version = "0.2.4", optional = true }
+
+[dev-dependencies]
+hound = "3"
+
+[features]
+default = ["rust", "resample"]
+rust = ["rustfft", "realfft"]
+resample = ["samplerate"]

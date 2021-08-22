@@ -1,0 +1,5 @@
+[workspace]
+members = ["virtual-surround", "jack-vsf"]
+
+[patch.crates-io]
+libsamplerate-sys = { path = "./libsamplerate-sys" }

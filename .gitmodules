@@ -1,0 +1,6 @@
+[submodule "bwavfile"]
+	path = bwavfile
+	url = git@github.com:EaterLabs/bwavfile.git
+[submodule "libsamplerate-sys"]
+	path = libsamplerate-sys
+	url = git@github.com:the-eater/libsamplerate-sys.git

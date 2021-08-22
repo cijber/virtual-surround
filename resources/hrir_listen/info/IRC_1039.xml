@@ -1,0 +1,57 @@
+<Measurement>
+  <General>
+    <Title> Autumn 2002 measurement session </Title>
+    <Date> 20021126 </Date>
+    <Context> Listen Project </Context>
+    <Copyright> Public </Copyright>
+    <Team> G. Vandernoot </Team>
+    <Goal> Full measurement </Goal>
+    <Notes> </Notes>
+  </General>
+  <Subject>
+    <ID> IRC39 </ID>
+    <Sex> Female </Sex>
+    <Hairstyle> Short </Hairstyle>
+    <Description> </Description>
+  </Subject>
+  <Room>
+    <ID> Anechoic room </ID>
+    <Dimension>
+      <L> 5.9 </L>
+      <W> 4.4 </W>
+      <H> 4.25 </H>
+    </Dimension>
+  </Room>
+  <System>
+    <Software>
+      <Name> Max/MSP Measurement Toolkit </Name>
+      <Version> 1.2 </Version>
+    </Software>
+    <Microphone>
+      <Type> Knowles FG332 set 3 </Type>
+      <Notes> </Notes>
+    </Microphone>
+    <ADconverter> RME multiface </ADconverter>
+    <DAconverter> RME multiface </DAconverter>
+    <Amplifier> Yamaha PC 1002 </Amplifier>
+    <Loudspeaker>
+      <Loud_type> Tannoy System 600 </Loud_type>
+      <Loud_number> 292930P </Loud_number>
+    </Loudspeaker>
+    <Distance> 1.95 </Distance>
+    <Measuring_type> Blocked ear </Measuring_type>
+    <Microphone_depth> 0.0  </Microphone_depth>
+    <Signal_type> Logarithmic sweep </Signal_type>
+    <HeadTracker>
+      <Interest> No correction, just position mesured </Interest>
+      <Notes> </Notes>
+    </HeadTracker>
+  </System>
+  <Data>
+    <Level> </Level>
+    <Measure_grid> 187 </Measure_grid>
+    <Quantification> 24 </Quantification>
+    <Sampling_rate> 44100 </Sampling_rate>
+    <Measure_length> 8192 </Measure_length>
+  </Data>
+</Measurement>
