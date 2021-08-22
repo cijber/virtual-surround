@@ -324,32 +324,8 @@ impl VirtualSurroundFilter {
     fn new<R: Read + Seek>(reader: R, sample_rate: Option<u32>) -> anyhow::Result<Self> {
         let inner = RawVirtualSurroundFilter::new(reader, sample_rate)?;
 
-        let mut in_space = [
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-        ];
+        const EMPTY_VEC: Vec<f32> = Vec::new();
+        let mut in_space = [EMPTY_VEC; MAX_CHANNELS];
         for i in 0..inner.channels() {
             in_space[i] = vec![0f32; inner.samples_required()];
         }
