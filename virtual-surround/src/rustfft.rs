@@ -35,58 +35,8 @@ impl FFTLogic for RustFFTLogic {
         let input = vec![Complex32::default(); (length / 2) + 1];
         let output = vec![Complex32::default(); (length / 2) + 1];
 
-        let mut ir: [Vec<Complex32>; MAX_CHANNELS * 2] = {
-            [
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-                vec![],
-            ]
-        };
+        const EMPTY: Vec<Complex32> = Vec::new();
+        let mut ir = [EMPTY; MAX_CHANNELS * 2];
 
         for i in 0..(channels * 2) {
             ir[i] = vec![Complex32::new(0f32, 0f32); (length / 2) + 1];
